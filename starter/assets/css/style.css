@@ -1,13 +1,11 @@
+/* Setting all to the following properties             Some code has been commented out, some has been deleted.*/                        
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body {
-    background-color: #d9dcd6;
-}
-
+/* Header CSS */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,66 +13,81 @@ body {
     color: #ffffff;
 }
 
-.header h1 {
-    display: inline-block;
-    font-size: 48px;
-}
-
-.header h1 .seo {
-    color: #d9dcd6;
-}
-
-.header div {
+/* Forces header list text to list from right of the page */
+#header-text {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
-.header div ul {
-    list-style-type: none;
-}
-
-.header div ul li {
+/* Displays list text in blocks sequentially, adds space (margin-left) between each element  */
+#header-ulist li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* Body CSS */
+body {
+    background-color: #d9dcd6;
+}
+
+/* Changes font size and colour of heading */
+h1 {
+    display: inline-block;
+    font-size: 48px;
+    color: #d9dcd6;
+}
+
+h2 { /* Reduced clutter to generalised h2,h3, adds margin and sets font size */
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* Sets header (and all) link colours white */
 a {
     color: #ffffff;
     text-decoration: none;
 }
-
+/* Sets font size for every paragraph */
 p {
     font-size: 16px;
 }
-
+/* Hero (large image on front of site) height, width, margin. Compressed original 13.5MB image to 1.61MB to allow faster loading alongside other images */
 .hero {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
 }
-
+/* Sets all html with the class "float-left" with these properties, aligning left*/
 .float-left {
     float: left;
     margin-right: 25px;
 }
-
+/* Same as above but aligning right */
 .float-right {
     float: right;
     margin-left: 25px;
 }
-
+/* Sets the content class to have a width of 75, display as inline block and add 20px to the margin on the left*/
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
+    
 }
-
+/* Sets the images within the content class to have a max-height of 200px*/
+.content img{ 
+    max-height: 200px;
+}
+/* Sets all with the benefits class to have the following properties*/
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -82,11 +95,19 @@ p {
     float: right;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif; /* Fixed syntax errors */
     background-color: #2589bd;
+    margin-bottom: 32px;
+    color: #ffffff;
 }
 
-.benefit-lead {
+.benefits img { 
+    display: block;
+    margin: 10px auto;
+    max-height: 150px; /* Specified max-height and max-width to prevent flickering */
+    max-width: 150px;
+}
+/*.benefit-lead {                      Reducing clutter
     margin-bottom: 32px;
     color: #ffffff;
 }
@@ -99,46 +120,43 @@ p {
 .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
-}
+}*/
 
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/*.benefit-lead img {
     display: block;
     margin: 10px auto;
+    max-height: 150px; Specified max-height and max-width to prevent flickering 
     max-width: 150px;
 }
 
 .benefit-brand img {
     display: block;
     margin: 10px auto;
+    max-height: 150px;
     max-width: 150px;
 }
 
 .benefit-cost img {
     display: block;
     margin: 10px auto;
+    max-height: 150px;
     max-width: 150px;
-}
+}*/
 
-.search-engine-optimization {
+/* SEO class settings */
+.content-box{
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/*.search-engine-optimization {             Reducing clutter, reduced to content-box
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
 }
@@ -147,7 +165,7 @@ p {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
 }
@@ -156,12 +174,12 @@ p {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
-}
+}*/
 
-.search-engine-optimization img {
+/*.search-engine-optimization img {           Reduced clutter
     max-height: 200px;
 }
 
@@ -171,30 +189,16 @@ p {
 
 .social-media-marketing img {
     max-height: 200px;
-}
+}*/
 
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
+/* Footer CSS */
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+footer h2 {
     font-size: 20px;
 }
