@@ -6,8 +6,12 @@ This is a refactor of the horiseon website to improve the following of accessibi
 
 ## Screenshot
 
+<<<<<<< Updated upstream
 ![Alt text](./starter/assets/images/screenshot.png "Screenshot of WebPage.")
+=======
+![screenshot of webpage](assets/images/screenshot.png)
+>>>>>>> Stashed changes
 
 ## Link
 
-https://davidhjolley.github.io/horiseon-refactor/
+https://davidhjolley.github.io/horiseon-refactor/index.html
