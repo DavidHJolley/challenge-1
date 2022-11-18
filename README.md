@@ -6,8 +6,8 @@ This is a refactor of the horiseon website to improve the following of accessibi
 
 ## Screenshot
 
-![screenshot of webpage](assets/images/screenshot.png))
+![screenshot of webpage](assets/images/screenshot.png)
 
 ## Link
 
-https://davidhjolley.github.io/horiseon-refactor/
+https://davidhjolley.github.io/horiseon-refactor/index.html
