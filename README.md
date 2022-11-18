@@ -6,7 +6,7 @@ This is a refactor of the horiseon website to improve the following of accessibi
 
 ## Screenshot
 
-![Alt text](./starter/assets/images/screenshot.png "Screenshot of WebPage.")
+![screenshot of webpage](assets/images/screenshot.png))
 
 ## Link
 
